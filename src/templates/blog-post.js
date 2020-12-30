@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Comments from "../components/comments"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -23,12 +24,14 @@ const BlogPostTemplate = ({ data, location }) => {
       >
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+          <p>{post.frontmatter.date} · {post.timeToRead} min read</p>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
+        <h2>Comments</h2>
+        <Comments/>
         <hr />
         <footer>
           <Bio />
@@ -81,6 +84,7 @@ export const pageQuery = graphql`
       id
       excerpt(pruneLength: 160)
       html
+      timeToRead
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")

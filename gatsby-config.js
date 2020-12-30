@@ -3,7 +3,7 @@ module.exports = {
     title: `Davide Imola`,
     author: {
       name: `Davide Imola`,
-      summary: `who lives and works in Verona building and automating useful things.`,
+      summary: `a passionate DevOps Engineer who lives and works in Verona.`,
     },
     description: `A blog from a DevOps entusiast.`,
     siteUrl: `https://davideimola.com/`,
@@ -12,6 +12,7 @@ module.exports = {
       github: `davideimola`,
       linkedin: `davideimola`
     },
+    repo: `davideimola/davideimola.com`
   },
   plugins: [
     {
