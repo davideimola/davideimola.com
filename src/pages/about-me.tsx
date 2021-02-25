@@ -3,9 +3,8 @@ import { graphql, Link } from "gatsby"
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Comments from "../components/comments"
 
-const AboutMe = ({data}) => {
+const AboutMe = ({data, location}) => {
   const siteTitle = data.site.siteMetadata?.title || `Davide Imola's Blog`
 
   return (
