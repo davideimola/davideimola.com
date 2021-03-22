@@ -19,7 +19,7 @@ const AboutMe = ({data, location}) => {
           <h1 itemProp="headline">About Me</h1>
         </header>
         <section itemProp="articleBody">
-          Hi, my name is <strong>Davide Imola</strong>, and I am a young DevOps Engineer. I have a strong advocation towards Cloud-Native architectures, serverless infrastructure, and automation.
+          Hi, my name is <strong>Davide Imola</strong>, and I am a young DevOps Engineer. I have a strong avocation towards Cloud-Native architectures, serverless infrastructure, and automation.
           <br/><br/>
           I am currently working as a DevOps Engineer at milkman and studying Cyber Security at Verona University, Italy.
           <br/><br/>
@@ -34,6 +34,31 @@ const AboutMe = ({data, location}) => {
 
           <h3>Aside from software engineering?</h3>
           In my spare time, I enjoy watching movies and series, listen to music, read some books (maybe I would read more than now 😅), play video games, stay with Lord (my dog, a Cavalier King Charles Spaniel 🐶) and travel around the world. Moreover, I am a newbie amatorial photographer.
+
+          <h3>Mentoring</h3>
+          I offer a 1-to-1 mentoring on different topics:
+
+          <ul>
+            <li>DevOps</li>
+            <li>Software Engineering</li>
+            <li>Microservices Architectures</li>
+            <li>Kubernetes</li>
+            <li>Open Source</li>
+            <li>Cyber Security</li>
+          </ul>
+
+          Schedule a session by checking my availability on <a href="https://calendly.com/davideimola/30min" target="_blank">Calendly</a>!
+
+          <h3>Wanna help me and my projects?</h3>
+          I spend time working and helping other people for <b>mutual improvement</b>! So any help are really appreciated.
+
+          You can help me in different ways, such as:
+
+          <ul>
+            <li>Add me on <a href="https://linkedin.com/in/davideimola">LinkedIn</a> and add a recommendation!</li>
+            <li>Contact me and ask if you can help me with something.</li>
+            <li>Offer me <a href="https://paypal.me/DImola" target="_blank">something to drink</a>!</li>
+          </ul>
         </section>
       </article>
     </Layout>
