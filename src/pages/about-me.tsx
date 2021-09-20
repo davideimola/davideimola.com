@@ -49,6 +49,8 @@ const AboutMe = ({data, location}) => {
 
           Schedule a session by checking my availability on <a href="https://calendly.com/davideimola/30min" target="_blank">Calendly</a>!
 
+          Instead, if you are looking to learn things in more depth you can buy some of my hours on <a href="https://www.docety.com/?referral_code=COADWEZBKJPVTCC21" target="_blank">DOCETY</a>.
+
           <h3>Wanna help me and my projects?</h3>
           I spend time working and helping other people for <b>mutual improvement</b>! So any help are really appreciated.
 
