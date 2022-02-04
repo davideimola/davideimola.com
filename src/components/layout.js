@@ -25,7 +25,21 @@ const Layout = ({ location, title, children }) => {
       <header className="global-header">{header}</header>
       <main>{children}</main>
       <footer>
-        © {new Date().getFullYear()}, Built with ♥ by Davide Imola using Gatsby
+        <div align="center">
+          © {new Date().getFullYear()}, Built with ♥ by Davide Imola using
+          Gatsby <br />
+          <Link to="https://www.iubenda.com/privacy-policy/20195792">
+            Privacy Policy
+          </Link>{" "}
+          -{" "}
+          <Link to="https://www.iubenda.com/privacy-policy/20195792/cookie-policy">
+            Cookie Policy
+          </Link>{" "}
+          -{" "}
+          <Link to="https://www.iubenda.com/terms-and-conditions/20195792">
+            Terms and Conditions
+          </Link>
+        </div>
       </footer>
     </div>
   )
