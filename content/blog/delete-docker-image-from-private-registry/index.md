@@ -20,7 +20,7 @@ curl -i -H "Accept: application/vnd.docker.distribution.manifest.v2+json" https:
 Have you got any response from the API? Yes? Perfect! I think the first lines must be something like that.
 
 ```bash
-HTTP/2 200 
+HTTP/2 200
 content-type: application/vnd.docker.distribution.manifest.v2+json
 docker-content-digest: sha256:9d8a5598704c0427be6fed9937f62342db199c8a73083695f545e93fac3b08d8
 docker-distribution-api-version: registry/2.0

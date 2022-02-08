@@ -10,9 +10,9 @@ module.exports = {
     social: {
       twitter: `davideimola`,
       github: `davideimola`,
-      linkedin: `davideimola`
+      linkedin: `davideimola`,
     },
-    repo: `davideimola/davideimola.com`
+    repo: `davideimola/davideimola.com`,
   },
   plugins: [
     {
@@ -74,11 +74,24 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
     {
-      resolve: 'gatsby-plugin-iubenda-cookie-footer',
+      resolve: "gatsby-plugin-iubenda-cookie-footer",
       options: {
-        iubendaOptions: {"countryDetection":true,"consentOnContinuedBrowsing":false,"whitelabel":false,"lang":"en","siteId":2109199,"cookiePolicyId":20195792,"cookiePolicyUrl":"https://www.iubenda.com/privacy-policy/20195792", "banner":{ "acceptButtonDisplay":true,"customizeButtonDisplay":true,"position":"float-top-center" }},
-      }
-    }
+        iubendaOptions: {
+          countryDetection: true,
+          consentOnContinuedBrowsing: false,
+          whitelabel: false,
+          lang: "en",
+          siteId: 2109199,
+          cookiePolicyId: 20195792,
+          cookiePolicyUrl: "https://www.iubenda.com/privacy-policy/20195792",
+          banner: {
+            acceptButtonDisplay: true,
+            customizeButtonDisplay: true,
+            position: "float-top-center",
+          },
+        },
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
