@@ -5,7 +5,7 @@ attachments:
   - "gitkraken-client-screen.png"
 ---
 
-One of my favorite features of Git is the [Git hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) because they can let you check different things in your code such as linting, compiling, and testing before any Git action in your repository.
+One of my favorite features of Git is [Git hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) because they can let you check different things in your code such as linting, compiling, and testing before any Git action in your repository.
 
 In my ideal project setup, I always set some sort of pre-commit Git hooks to run before committing to the repository, because I do not have failing tests, wrong code listing, or build errors while my code is deployed on Git.
 
