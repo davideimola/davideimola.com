@@ -1,8 +1,7 @@
 ---
 title: Git Hook in GitKraken Client with Husky and Nvm
 date: "2022-01-08T19:00:00.000Z"
-attachments:
-  - "gitkraken-client-screen.png"
+featuredImage: ./gitkraken-client-screen.png
 ---
 
 One of my favorite features of Git is [Git hooks](https://git-scm.com/book/en/v2/Customizing-Git-Git-Hooks) because they can let you check different things in your code such as linting, compiling, and testing before any Git action in your repository.

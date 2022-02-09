@@ -35,7 +35,6 @@ const Bio = () => {
 
   // Set these values by editing "siteMetadata" in gatsby-config.js
   const author = data.site.siteMetadata?.author
-  const social = data.site.siteMetadata?.social
 
   const avatar = data?.avatar?.childImageSharp?.fixed
 
