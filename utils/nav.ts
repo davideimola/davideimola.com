@@ -1,3 +1,3 @@
 export const navigation = [
-    { name: "Blog", href: "/blog" },
+    {name: "Blog", href: "/blog"},
 ];

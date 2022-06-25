@@ -36,7 +36,7 @@ export default function Blog({posts}: InferGetStaticPropsType<typeof getStaticPr
                 </div>
             </div>
 
-            <Footer />
+            <Footer/>
         </>
     )
 }

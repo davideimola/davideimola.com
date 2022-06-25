@@ -39,8 +39,12 @@
       "module": "commonjs",
       "baseUrl": ".",
       "paths": {
-        "utils": ["./utils"],
-        "contentlayer/generated": ["./.contentlayer/generated"]
+        "utils": [
+          "./utils"
+        ],
+        "contentlayer/generated": [
+          "./.contentlayer/generated"
+        ]
       }
     }
   }

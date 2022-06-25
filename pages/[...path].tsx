@@ -75,7 +75,7 @@ export default function PathPage({
             </main>
 
             <SimilarPosts posts={similarPosts}></SimilarPosts>
-            <Footer />
+            <Footer/>
         </>
     )
 }

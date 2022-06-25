@@ -29,7 +29,7 @@ export const PostPreview = ({post, author}: PostPreviewProps) => {
                     <div className="flex-1">
                         <div className="flex flex-wrap gap-2">
                             {post.tags.map(tag => (
-                                <Tag key={tag} tag={tag} />
+                                <Tag key={tag} tag={tag}/>
                             ))}
                         </div>
                         <div className="block mt-2">
@@ -72,9 +72,9 @@ export const PostPreview = ({post, author}: PostPreviewProps) => {
 };
 
 const readTime = (rt: number) => {
-  if (rt === 1) {
-    return "1 minute";
-  } else {
-    return `${rt} minutes`;
-  }
+    if (rt === 1) {
+        return "1 minute";
+    } else {
+        return `${rt} minutes`;
+    }
 };

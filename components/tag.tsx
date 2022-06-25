@@ -1,4 +1,4 @@
-export const Tag = ({ tag }: { tag: string }) => {
+export const Tag = ({tag}: { tag: string }) => {
     return (
         <div className="flex items-center">
       <span
