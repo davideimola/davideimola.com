@@ -10,6 +10,7 @@ import {Footer} from "../components/footer";
 import {Nav} from "../components/nav";
 import dynamic from "next/dynamic";
 import {config} from "../utils/config";
+import {Tag} from "../components/tag";
 
 const DiscussionEmbed = dynamic(() => import("../components/disqus"), {
     ssr: false,
@@ -66,13 +67,24 @@ export default function PathPage({
                             />
                         </a>
                     </div>
+                    <div className="text-center">
+                        <p className="text-sm font-medium text-gray-900">
+                            <a href={"#"}>{author.name}</a>
+                        </p>
+                        <div className="flex space-x-1 text-sm text-gray-500">
+                            <time dateTime={new Date(post.date).toISOString()}>
+                                {post.readablePublishDate}
+                            </time>
+                            <span aria-hidden="true">&middot;</span>
+                            <span>reading in {readTime(post.readTime)}</span>
+                        </div>
+                    </div>
                 </div>
-                <div className="text-center">
-                    <p className="text-sm font-medium text-gray-900">
-                        <a href={"#"}>{author.name}</a>
-                    </p>
-                    <span aria-hidden="true">&middot;</span>
-                    <span>reading in {readTime(post.readTime)}</span>
+
+                <div className="m-auto w-full mt-3 flex gap-2 justify-center">
+                    {post.tags.map((tag) => (
+                        <Tag key={tag} tag={tag}/>
+                    ))}
                 </div>
 
                 <div className="prose prose-lg m-auto mt-6 px-4 md:px-0">

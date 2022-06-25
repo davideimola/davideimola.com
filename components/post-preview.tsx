@@ -58,7 +58,7 @@ export const PostPreview = ({post, author}: PostPreviewProps) => {
                             </p>
                             <div className="flex space-x-1 text-sm text-gray-500">
                                 <time dateTime={new Date(post.date).toISOString()}>
-                                    {post.date}
+                                    {post.readablePublishDate}
                                 </time>
                                 <span aria-hidden="true">&middot;</span>
                                 <span>{readTime(post.readTime)}</span>

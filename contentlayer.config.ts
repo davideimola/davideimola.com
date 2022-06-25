@@ -2,6 +2,7 @@ import {defineDocumentType, makeSource} from "contentlayer/source-files"
 import path from "path";
 // @ts-ignore
 import prism from "@mapbox/rehype-prism";
+import moment from "moment";
 
 const WORDS_PER_MINUTE = 225;
 
@@ -69,6 +70,12 @@ export const BlogPost = defineDocumentType(() => ({
         readTime: {
             type: "number",
             resolve: (post) => readingTime(post.body.raw),
+        },
+        readablePublishDate: {
+          type: "string",
+          resolve: (post) => {
+              return moment(post.date).format('lll');
+          }
         },
         postPath: {
             type: "string",
