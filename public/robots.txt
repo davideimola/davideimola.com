@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.davideimola.com
+
+# Sitemaps
+Sitemap: https://www.davideimola.com/sitemap.xml

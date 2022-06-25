@@ -1,4 +1,4 @@
-import { allBlogPosts } from "contentlayer/generated";
+import {allBlogPosts} from "contentlayer/generated";
 import {authors} from "../authors";
 
 export const getBlogData = () => {
