@@ -5,5 +5,8 @@ export const config = {
     description: 'Cloud all the things!',
     social: {
         twitter: 'DavideImola'
-    }
+    },
+    disqus: {
+        shortname: "davideimola",
+    },
 }

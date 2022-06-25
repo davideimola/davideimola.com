@@ -8,6 +8,12 @@ import Image from "next/image";
 import Link from "next/link";
 import {Footer} from "../components/footer";
 import {Nav} from "../components/nav";
+import dynamic from "next/dynamic";
+import {config} from "../utils/config";
+
+const DiscussionEmbed = dynamic(() => import("../components/disqus"), {
+    ssr: false,
+})
 
 export default function PathPage({
                                      post,
@@ -40,7 +46,7 @@ export default function PathPage({
                 type="article"
             />
 
-            <Nav />
+            <Nav/>
 
             <main className="wrapper py-10">
                 <h1 className="text-4xl md:text-6xl text-center py-2 sm:py-0 max-w-[900px] m-auto font-bold mt-10">
@@ -71,6 +77,20 @@ export default function PathPage({
 
                 <div className="prose prose-lg m-auto mt-6 px-4 md:px-0">
                     <MdxSection components={components}/>
+                </div>
+
+                <div className="prose prose-lg m-auto px-4 md:px-0">
+                    {process.env.NODE_ENV === "production" && (
+                        <DiscussionEmbed
+                            shortname={config.disqus.shortname}
+                            config={{
+                                url: "https://" + path.join(config.hostname, post.postPath),
+                                identifier: post.path,
+                                title: post.title,
+                                language: "en_US",
+                            }}
+                        />
+                    )}
                 </div>
             </main>
 

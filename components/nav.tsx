@@ -22,7 +22,7 @@ export const Nav = () => {
       <Disclosure as="nav" className="bg-white shadow">
         {({ open }) => (
           <>
-            <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto pt-6 px-4 sm:px-6 lg:px-8">
               <div className="relative flex justify-between h-16">
                 <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                   {/* Mobile menu button */}
@@ -35,25 +35,23 @@ export const Nav = () => {
                     )}
                   </Disclosure.Button>
                 </div>
-                <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+                <div className="relative flex items-center justify-between sm:h-10 lg:justify-start">
                   <div className="flex-shrink-0 flex items-center text-indigo-600">
                     <Link href="/">
                       <a>
-                        <Image alt="Davide Imola" src={config.image} sizes="32" />
+                        <img
+                            alt="Davide Imola"
+                            src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                            className="h-8 w-auto sm:h-10"
+                        />
                       </a>
                     </Link>
                   </div>
-                  <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-                    {/* Current: "border-indigo-500 text-gray-900", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" */}
+                  <div className="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
                     {navigation.map((nav) => (
                       <Link href={nav.href} key={nav.href}>
                         <a
-                          className={classNames(
-                            "inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium",
-                            linkActive(nav.href)
-                              ? "border-indigo-500 text-gray-900"
-                              : "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700"
-                          )}
+                          className="font-medium text-gray-500 hover:text-gray-900"
                         >
                           {nav.name}
                         </a>
