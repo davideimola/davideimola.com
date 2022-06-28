@@ -49,7 +49,7 @@ export default function PathPage({
 
             <Nav/>
 
-            <main className="wrapper py-10">
+            <main className="bg-white wrapper py-10">
                 <h1 className="text-4xl md:text-6xl text-center py-2 sm:py-0 max-w-[900px] m-auto font-bold mt-10">
                     {post.title}
                 </h1>
