@@ -2,12 +2,14 @@ import '../styles/globals.css'
 import type {AppProps} from 'next/app'
 import {SEO} from "../components/seo";
 import Script from "next/script";
+import {Analytics} from "@vercel/analytics/react";
 
 function MyApp({Component, pageProps}: AppProps) {
     return (
         <>
             <SEO/>
             <Component {...pageProps} />
+            <Analytics />
 
             <Script id="iub" type="text/javascript">
                 {`

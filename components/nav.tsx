@@ -2,6 +2,7 @@ import {Disclosure} from '@headlessui/react'
 import {BellIcon, MenuIcon, XIcon} from '@heroicons/react/outline'
 import {navigation} from "../utils/nav";
 import Link from "next/link";
+import {config} from "../utils/config";
 
 function classNames(...classes: any[]) {
     return classes.filter(Boolean).join(' ')
@@ -20,12 +21,12 @@ export const Nav = () => {
                                     <div className="flex-shrink-0 flex items-center">
                                     <img
                                         className="block lg:hidden h-8 w-auto"
-                                        src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                                        src={config.logo}
                                         alt="Davide Imola"
                                     />
                                     <img
                                         className="hidden lg:block h-8 w-auto"
-                                        src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                                        src={config.logo}
                                         alt="Davide Imola"
                                     />
                                 </div>
