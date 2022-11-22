@@ -85,7 +85,7 @@ const HeroSection = () => {
                                             <img
                                                 alt="Davide Imola"
                                                 className="h-8 w-auto sm:h-10"
-                                                src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                                                src={config.logo}
                                             />
                                         </a>
                                         <div className="-mr-2 flex items-center md:hidden">
@@ -127,7 +127,7 @@ const HeroSection = () => {
                                         <div>
                                             <img
                                                 className="h-8 w-auto"
-                                                src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                                                src={config.logo}
                                                 alt=""
                                             />
                                         </div>

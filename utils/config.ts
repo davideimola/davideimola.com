@@ -1,6 +1,7 @@
 export const config = {
     title: "Davide Imola",
     image: "/davideimola.jpg",
+    logo: "/logo.svg",
     hostname: 'www.davideimola.com',
     description: 'Cloud all the things!',
     social: {
