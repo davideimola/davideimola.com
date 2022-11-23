@@ -18,6 +18,7 @@ export const SEO = ({description, title, image, type = 'website', author = 'davi
     return (
         <Head>
             <title>{siteTitle}</title>
+            <link rel="icon" type="image/x-icon" href="/favicon.png"/>
             <meta name="description" content={description}/>
             <meta name="type" property="og:type" content={type}/>
             <meta name="title" property="og:title" content={siteTitle}/>
