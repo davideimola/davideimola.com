@@ -142,6 +142,9 @@ export default function Talks() {
                             <p className="inline-flex rounded-full bg-green-100 px-2 text-xs font-semibold leading-5 text-green-800">
                               {e.type}
                             </p>
+                            <p className="inline-flex rounded-full bg-blue-100 px-2 text-xs font-semibold leading-5 text-green-800">
+                              {e.language}
+                            </p>
                           </div>
                         </div>
                         <div className="mt-2 sm:flex sm:justify-between">
@@ -181,22 +184,6 @@ export default function Talks() {
                 ))}
               </ul>
             </div>
-            {/*<table className="m-auto w-full">*/}
-            {/*  <tr className="text-center py-4">*/}
-            {/*    <th>Date</th>*/}
-            {/*    <th>Event name</th>*/}
-            {/*    <th>Talk</th>*/}
-            {/*    <th>Location</th>*/}
-            {/*  </tr>*/}
-            {/*  {filteredEvents.map((e, i) => (*/}
-            {/*    <tr key={i} className="">*/}
-            {/*      <td>{moment(e.date).format("MMM DD YYYY")}</td>*/}
-            {/*      <td>{e.name}</td>*/}
-            {/*      <td>{e.title}</td>*/}
-            {/*      <td>{formatLocation(e)}</td>*/}
-            {/*    </tr>*/}
-            {/*  ))}*/}
-            {/*</table>*/}
           </div>
         </div>
       </div>
