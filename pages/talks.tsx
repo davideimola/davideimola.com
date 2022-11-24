@@ -4,6 +4,8 @@ import { Footer } from "../components/footer";
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { events, Event } from "../data/events";
 import { Listbox } from "@headlessui/react";
+import moment from "moment";
+import { CalendarIcon, MapPinIcon, UsersIcon } from "@heroicons/react/20/solid";
 
 const eventTypes = [
   "all",
@@ -121,22 +123,80 @@ export default function Talks() {
               </div>
             </div>
 
-            <table className="m-auto full-width">
-              <th>
-                <td>Date</td>
-                <td>Event name</td>
-                <td>Talk</td>
-                <td>Location</td>
-              </th>
-              {filteredEvents.map((e, i) => (
-                <tr key={i}>
-                  <td>{e.date.toString()}</td>
-                  <td>{e.name}</td>
-                  <td>{e.title}</td>
-                  <td>{formatLocation(e)}</td>
-                </tr>
-              ))}
-            </table>
+            <div className="overflow-hidden bg-white shadow sm:rounded-md">
+              <ul role="list" className="divide-y divide-gray-200">
+                {filteredEvents.map((e, i) => (
+                  <li key={i}>
+                    <a
+                      rel="noreferrer"
+                      target="_blank"
+                      href={e.url ? e.url : "#"}
+                      className="block hover:bg-gray-50"
+                    >
+                      <div className="px-4 py-4 sm:px-6">
+                        <div className="flex items-center justify-between">
+                          <p className="truncate text-sm font-medium text-indigo-600">
+                            {e.title}
+                          </p>
+                          <div className="ml-2 flex flex-shrink-0">
+                            <p className="inline-flex rounded-full bg-green-100 px-2 text-xs font-semibold leading-5 text-green-800">
+                              {e.type}
+                            </p>
+                          </div>
+                        </div>
+                        <div className="mt-2 sm:flex sm:justify-between">
+                          <div className="sm:flex">
+                            <p className="flex items-center text-sm text-gray-500">
+                              <UsersIcon
+                                className="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400"
+                                aria-hidden="true"
+                              />
+                              {e.name}
+                            </p>
+                            <p className="mt-2 flex items-center text-sm text-gray-500 sm:mt-0 sm:ml-6">
+                              <MapPinIcon
+                                className="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400"
+                                aria-hidden="true"
+                              />
+                              {formatLocation(e)}
+                            </p>
+                          </div>
+                          <div className="mt-2 flex items-center text-sm text-gray-500 sm:mt-0">
+                            <CalendarIcon
+                              className="mr-1.5 h-5 w-5 flex-shrink-0 text-gray-400"
+                              aria-hidden="true"
+                            />
+                            <p>
+                              <time
+                                dateTime={moment(e.date).format("YYYY-MM-DD")}
+                              >
+                                {moment(e.date).format("MMM DD, YYYY")}
+                              </time>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            {/*<table className="m-auto w-full">*/}
+            {/*  <tr className="text-center py-4">*/}
+            {/*    <th>Date</th>*/}
+            {/*    <th>Event name</th>*/}
+            {/*    <th>Talk</th>*/}
+            {/*    <th>Location</th>*/}
+            {/*  </tr>*/}
+            {/*  {filteredEvents.map((e, i) => (*/}
+            {/*    <tr key={i} className="">*/}
+            {/*      <td>{moment(e.date).format("MMM DD YYYY")}</td>*/}
+            {/*      <td>{e.name}</td>*/}
+            {/*      <td>{e.title}</td>*/}
+            {/*      <td>{formatLocation(e)}</td>*/}
+            {/*    </tr>*/}
+            {/*  ))}*/}
+            {/*</table>*/}
           </div>
         </div>
       </div>

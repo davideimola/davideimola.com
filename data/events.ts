@@ -26,7 +26,7 @@ export const events: Event[] = [
   {
     date: new Date(2021, 12, 21),
     name: "Codemotion",
-    city: "Milan",
+    city: null,
     country: EventCountry.Remote,
     title: "Conosci le vere potenzialità di IaC (Infrastructure as Code)?",
     url: "https://talks.codemotion.com/paths/conosci-le-vere-potenzialit-di-iac-infra",
@@ -36,7 +36,7 @@ export const events: Event[] = [
   {
     date: new Date(2021, 12, 21),
     name: "Codemotion",
-    city: "Milan",
+    city: null,
     country: EventCountry.Remote,
     title:
       "Applicazioni DevOps: CI/CD e Log Aggregation con Github Actions e Loki",
@@ -47,7 +47,7 @@ export const events: Event[] = [
   {
     date: new Date(2021, 12, 21),
     name: "Codemotion",
-    city: "Milan",
+    city: null,
     country: EventCountry.Remote,
     title:
       "Shift Left e Continuous Monitoring: come migliorare la Security della propria Web App",
