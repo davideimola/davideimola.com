@@ -81,13 +81,6 @@ export default function Uses() {
               Not my preferred IDE, but I use it from time to time.
             </Tool>
           </ToolsSection>
-          <ToolsSection title="Design">
-            <Tool title="Figma">
-              We started using Figma as just a design tool but now it’s become
-              our virtual whiteboard for the entire company. Never would have
-              expected the collaboration features to be the real hook.
-            </Tool>
-          </ToolsSection>
           <ToolsSection title="Productivity">
             <Tool title="Alfred">
               It’s not the newest kid on the block but it’s still the fastest.
