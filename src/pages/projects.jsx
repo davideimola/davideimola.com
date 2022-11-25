@@ -4,6 +4,7 @@ import Head from 'next/head'
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import logoSchrodinger from '@/images/logos/sh.svg'
+import logoFantaculo from '@/images/logos/fantaculo.png'
 
 const projects = [
   {
@@ -12,6 +13,13 @@ const projects = [
       'Community of developers with the interesting for Open Source.',
     link: { href: 'https://schrodinger-hat.it', label: 'schrodinger-hat.it' },
     logo: logoSchrodinger,
+  },
+  {
+    name: 'Fantaculo',
+    description:
+      'Web application to calculate your "ass" and helps you manage your fantasy football team.',
+    link: { href: 'https://fantaculo.it', label: 'fantaculo.it' },
+    logo: logoFantaculo,
   },
 ]
 
