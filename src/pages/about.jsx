@@ -66,16 +66,40 @@ export default function About() {
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                I graduated in Computer Science in 2018 from the University of
-                Verona. After that, I started my journey as DevOps Software
-                Engineer. I have worked for a while with building pipelines,
-                cloud providers, and backend development.
+                I started my journey into coding pretty early. For my first
+                communion, I made my parents bought me my first personal laptop,
+                where I started experimenting with HTML, CSS, forums, and blogs.
               </p>
               <p>
-                I am also the Co-Organizer of the{' '}
-                <a href="https://www.schrodinger-hat.it/">Schrödinger Hat</a>{' '}
-                Community. Our focus is helping spreading the love for Open
-                Source.
+                Next, I decided to follow my passion by attending a computer
+                science high school and the University in my hometown. During my
+                university years, I started experimenting with the web by
+                creating sites for different clients, and in December, I landed
+                my first job position in this field.
+              </p>
+              <p>
+                Since I started my journey, I have always been interested in
+                servers and backend development. I started working as a DevOps
+                Engineer, and I loved it!
+              </p>
+              <p>
+                Containers, Continuous Integration Pipelines, Python, and
+                Observability, are only a few of the things I studied with
+                particular interest! Currently, I am trying to focus on the
+                following topics on Golang, Node.js, Kubernetes, and
+                Cloud-Native.
+              </p>
+              <p>
+                I firmly believe in giving back to others, and I have always
+                loved to help as I can. I love teaching and talking about tech
+                stuff, so I started making courses, doing private lessons, and
+                mentoring those who need it. Of course, giving back has brought
+                me to Open Source and Communities, and I am currently one of the
+                co-organizers of{' '}
+                <Link href="https://www.schrodinger-hat.it/">
+                  Schrödinger Hat
+                </Link>{' '}
+                an Italian community based on OS.
               </p>
             </div>
           </div>
