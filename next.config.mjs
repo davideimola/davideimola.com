@@ -9,6 +9,18 @@ const nextConfig = {
   experimental: {
     scrollRestoration: true,
   },
+  async rewrites() {
+    return [
+      {
+        source: '/delete-docker-image-from-private-registry',
+        destination: '/articles/delete-docker-image-from-private-registry'
+      },
+      {
+        source: '/git-hooks-gitkraken-client-husky-nvm',
+        destination: '/articles/git-hooks-gitkraken-client-husky-nvm'
+      }
+    ]
+  }
 }
 
 const withMDX = nextMDX({
