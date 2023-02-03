@@ -21,6 +21,12 @@ const projects = [
     link: { href: 'https://fantaculo.it', label: 'fantaculo.it' },
     logo: logoFantaculo,
   },
+  {
+    name: "Schrödinger's Open Source Day 2023",
+    description: 'I am an organizer of this hybrid event about Open Source.',
+    link: { href: 'https://osday.dev', label: 'osday.dev' },
+    logo: logoSchrodinger,
+  },
 ]
 
 function LinkIcon(props) {
