@@ -41,6 +41,31 @@ export default function Speaking() {
         intro="I love sharing my ideas and opinions. I am looking to beat my shyness by presenting something on stage or wherever I can talk."
       >
         <div className="space-y-20">
+          <SpeakingSection title="Talks">
+            <Appearance
+              href="https://2023.incontrodevops.it/"
+              title="How to GitOps your Kubernetes Cluster with Flux"
+              description="Discover how to implement GitOps inside of Kubernetes with Flux."
+              event="IDI 2023"
+              cta="Watch event"
+            />
+            <Appearance
+              href="https://www.wearedevelopers.com/event/devops-day-february-2023"
+              title="How to GitOps your Kubernetes Cluster with Flux"
+              description="Discover how to implement GitOps inside of Kubernetes with Flux."
+              event="DevOps Day"
+              cta="Watch event"
+            />
+          </SpeakingSection>
+          <SpeakingSection title="Podcast">
+            <Appearance
+              href="https://thebakery.dev/50/"
+              title="From building Open Source Software to building Open Source Conferences with Schrödinger Hat"
+              description="A behind the scene of the organization of the Open Source Day 2023."
+              event="The Developers' Bakery"
+              cta="Listen to the episode"
+            />
+          </SpeakingSection>
           <SpeakingSection title="Courses">
             <Appearance
               href="https://talks.codemotion.com/paths/conosci-le-vere-potenzialit-di-iac-infra"
