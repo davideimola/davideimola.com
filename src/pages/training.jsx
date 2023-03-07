@@ -114,7 +114,7 @@ export default function Training() {
                 Send me a message
               </SocialLink>
               <SocialLink
-                href="https://calendly.com/davideimola/30min"
+                href="https://calendly.com/davideimola/mentoring"
                 icon={CalendarIcon}
                 className="mt-4"
               >
